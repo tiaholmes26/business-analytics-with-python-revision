@@ -1,0 +1,320 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OJkTNP3tw-hE",
+        "outputId": "ec2d77b1-b84a-4018-bbda-bc34c02acb5b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "He's a doctor\n"
+          ]
+        }
+      ],
+      "source": [
+        "x=\"He\\'s a doctor\"\n",
+        "print(x)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=\"This is \\\"python\\\" programming\"\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-VnOaIAJxci_",
+        "outputId": "786080d6-63fe-4e91-861b-8f3912fcd908"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "This is \"python\" programming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"\\\"tia\\\"holmes\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "glI2rwzOyvJ7",
+        "outputId": "da520796-4c7c-4f15-89ef-5a5f98ca4d73"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\"tia\"holmes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"He\\'s a doctor\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bFZF1Q4HzxFt",
+        "outputId": "4073db0a-58d4-4ef0-a2aa-baf3ee7add26"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "He's a doctor\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Tia\\nNidhi\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3sbRCz-T0shl",
+        "outputId": "245169f6-09a5-4413-fa7c-4048bd4d1ad8"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tia\n",
+            "Nidhi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=[\"tia\",\"nidhi\",\"enitta\",\"parvathy\",\"angel\",\"ridha\"]\n",
+        "x.insert(5,\"mommy\")\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nMBoTH2V1dyf",
+        "outputId": "c6fd04e6-72c5-42a0-dc18-21c42a911c53"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['tia', 'nidhi', 'enitta', 'parvathy', 'angel', 'mommy', 'ridha']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=['A','B','C','K']\n",
+        "y=int(input(\"enter index\"))\n",
+        "n=input(\"enter the name\")\n",
+        "x.insert(y,n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BH0HvK0f2QEx",
+        "outputId": "b632f159-c36c-4c60-cd38-9703391f867a"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter index2\n",
+            "enter the nametia\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nTUsLDFA8joe",
+        "outputId": "3cbef2d5-d8ad-47e6-cf7e-8faa56c59af6"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['A', 'B', 'tia', 'C', 'K']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def tia():\n",
+        "  y=int(input(\"enter index\"))\n",
+        "  n=input(\"enter a name\")\n",
+        "  x.insert(y,n)"
+      ],
+      "metadata": {
+        "id": "cct6K_lF8qdf"
+      },
+      "execution_count": 21,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tia()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eJYrE3Ab-SbB",
+        "outputId": "5c928aa4-a51e-4424-957f-88194627475a"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter index1\n",
+            "enter a namenidhi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_nTOfXQG-X1l",
+        "outputId": "de265d62-c5eb-491f-ffa7-b23970c9cd78"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['A', 'nidhi', 'nidhi', 'B', 'tia', 'tia', 'C', 'K']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def maths(a,b):\n",
+        "  print(a,b)"
+      ],
+      "metadata": {
+        "id": "KT59FJFJ-lc7"
+      },
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=int(input(\"enter the first value\"))\n",
+        "y=int(input(\"enter the second value\"))\n",
+        "maths(x,y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YVwGGJI8Ezh0",
+        "outputId": "e0b63441-cfec-42fe-8e00-16b642619662"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first value35\n",
+            "enter the second value40\n",
+            "35 40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ddJN0-saFDmJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
